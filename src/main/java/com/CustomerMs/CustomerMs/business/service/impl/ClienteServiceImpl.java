@@ -16,7 +16,7 @@ public class ClienteServiceImpl implements IClienteService {
 
     private final ClienteRepository clienteRepository;
 
-    private final ClienteMapper clienteMapper; // Convierte entre Entity y DTO
+    private final ClienteMapper clienteMapper;
 
     public ClienteServiceImpl(ClienteRepository clienteRepository, ClienteMapper clienteMapper) {
         this.clienteRepository = clienteRepository;

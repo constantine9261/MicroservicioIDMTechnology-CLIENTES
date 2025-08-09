@@ -13,6 +13,7 @@ import java.util.List;
 @Configuration
 public class OpenApiConfig {
 
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
@@ -27,9 +28,9 @@ public class OpenApiConfig {
 
     private Info apiInfo() {
         return new Info()
-                .title("API Cotizador de Seguro Vehicular")
+                .title("API CustomerMs")
                 .version("1.0.0")
-                .description("Esta API permite cotizar un seguro vehicular. Todos los endpoints requieren JWT.");
+                .description("API para gestión de clientes");
     }
 
     private SecurityScheme createBearerScheme() {
